@@ -16,10 +16,12 @@
     background-color: #e67e22;
 }
 
+
 .ui-menu-color-resume{
     background-color: #8a1f5a
 }
 
+.bg-color-work-history,
 .ui-menu-color-contact{
     background-color: #224b72
 }
@@ -28,6 +30,7 @@
     background-color: #2c2c2c
 }
 
+.history-heading,
 .section-heading{
     font-family: "Exo" sans-serif;
     font-weight: 300;
@@ -264,4 +267,78 @@ h1,h2,h3,h4,h5{
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
+}
+
+/*----------------------Skilss*/
+
+.progress{
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.progress-type{
+    position: absolute;
+    left: 0;
+    font-weight:400;
+    padding: 20px 20px 20px 20px;
+    color: #fafafa;  
+    background-color: rgba(25,25,25,0.2)
+}
+
+.progress-section{
+    margin:40px 20px;
+}
+
+/*----------------------Working history*/
+.history-heading{
+    color:#fafafa;
+    margin-bottom:50px;
+}
+
+.timeline-item{
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    border-left: 1px solid;
+    color:#fafafa;
+}
+
+.timeline-item h4{
+      font-size:1em;
+      font-weight:700;
+}
+
+.timeline-item p{
+    padding:0;
+    margin:0;
+    color:#fafafa;
+}
+
+.timeline-item:before{
+    content: attr(data-dates);
+    position: absolute;
+    left:2.5em;
+    top:3em;
+    display:block;
+    font-family: "Exo", sans-serif;
+    font-weight:500;
+    font-size:0.8em;
+    padding:0;
+    margin:0;
+}
+
+.timeline-item:after{
+    width: 12px;
+    height: 12px;
+    display:block;
+    top: 2.4em;
+    position: absolute;
+    left:-6px;
+    border-radius:50%;
+    content:'';
+    background-color:#fafafa;
+}
+
+.history-items{
+    margin-bottom:30px;
 }
