@@ -70,10 +70,13 @@ header{
     background: rgba(19, 18, 18, 0.1); /* fallback colour. Make sure this is just one solid colour. */
     background: -webkit-linear-gradient(rgba(0, 0, 0,6), rgba(0, 0, 0, 0.1)), url("../images/test.jpg");
     background: linear-gradient(rgba(0, 0, 0,6), rgba(0, 0, 0, 0.1)), url("../images/test.jpg");
-    background-position: center;
+        background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 44.5vh;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 
 
 
@@ -94,8 +97,8 @@ header{
     font-family: "Roboto", sans-serif;
     font-weight: 200;
     font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 130px;
+     margin-top: 20px;
+    margin-bottom: 90px;
     color: #ffffff
 }
 
@@ -389,12 +392,18 @@ div#map {
 
 /*----------------------media query*/
 
-@media(min-width: 992px){
-    .center-form{
-        padding-top:30px;
-        min-height:240px;
+@media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
         margin: 0 auto;
-        max-width:50%;
-}
+        max-width: 50%;
+    }
 
 }
